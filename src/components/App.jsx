@@ -24,28 +24,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
         <div>
           <Link to="/">Home</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/store">Store</Link>
           <Link to="/about">About</Link>
           <Switch>
-            <Route path="/gallery">
-              <Gallery />
-            </Route>
-            <Route path="/store">
-              <Store />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
+            <Route path="/gallery"> <Gallery /> </Route>
+            <Route path="/store"> <Store /> </Route>
+            <Route path="/about"> <About /> </Route>
+            <Route path="/"> <Home /> </Route>
           </Switch>
         </div>
-      </Router>
     )
   }
 }
